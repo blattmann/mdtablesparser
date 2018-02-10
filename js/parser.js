@@ -43,7 +43,7 @@ let mdTables = (str) => {
           content += `${rowStart}${inner}${rowEnd}`
         }
       }
-      
+
     }
 
     if (content) {
