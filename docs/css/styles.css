@@ -35,6 +35,10 @@ textarea {
   padding-bottom: 60px;
 }
 
+.button {
+  margin: 10px;
+}
+
 .title {
   padding: 10px;
 }
