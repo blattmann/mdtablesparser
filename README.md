@@ -2,7 +2,21 @@
 
 Parse markdown tables with a tiny javascript file.
 
-## Example
+## Install
+
+```
+$ npm i markdown-table-parser --save
+```
+
+## Usage
+
+```
+let parseTable = require('markdown-table-parser')
+
+parseTable(your-content)
+```
+
+## Example (Vamilla javascript implementation)
 
 [https://blattmann.github.io/mdtablesparser/](https://blattmann.github.io/mdtablesparser/)
 

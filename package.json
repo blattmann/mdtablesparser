@@ -1,0 +1,32 @@
+{
+  "name": "markdown-table-parser",
+  "version": "1.0.0",
+  "description": "Easily parse markdown tables.",
+  "main": "js/index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blattmann/mdtablesparser.git"
+  },
+  "keywords": [
+    "markdown",
+    "md",
+    "html",
+    "tables",
+    "markdown",
+    "2",
+    "html",
+    "markdown2html"
+  ],
+  "author": "Stefan Blattmann",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/blattmann/mdtablesparser/issues"
+  },
+  "homepage": "https://github.com/blattmann/mdtablesparser#readme"
+}
