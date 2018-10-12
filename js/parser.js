@@ -10,6 +10,8 @@ let mdTables = str => {
     let tableEnd = '</tbody></table>'
     let rowStart = '<tr>'
     let rowEnd = '</tr>'
+    let headStart = '<th>'
+    let headEnd = '</th>'
     let columnStart = '<td>'
     let columnEnd = '</td>'
     let row = ''
@@ -28,6 +30,22 @@ let mdTables = str => {
     for (i; i < row.length; i += 1) {
       i_res = row[i]
 
+      // Table header.
+      if (row.length >= 1 && i === 0) {
+        column = i_res.split('|')
+        if (column.length > 1) {
+          let k = 0
+          let inner = ''
+          for (k; k < column.length; k += 1) {
+            k_res = column[k].trim()
+            inner += `${headStart}${k_res}${headEnd}`
+          }
+          content += `${rowStart}${inner}${rowEnd}`
+        }
+        i_res = row[i + 1]
+      }
+
+      // Table content.
       if (i_res) {
         column = i_res.split('|')
         if (column.length > 1) {
