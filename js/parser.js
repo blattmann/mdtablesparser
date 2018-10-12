@@ -18,7 +18,10 @@ let mdTables = str => {
     let i_res = ''
     let k_res = ''
 
-    str = str.replace(/<(div|\/div|br|p|\/p)[^>]{0,}>/g, '\n')
+    // Clean the content.
+    str = htmlDecode(str).replace(/<(div|\/div|p|\/p|br)[^>]{0,}>/g, '\n')
+
+    // Create rows.
     row = str.split('\n')
 
     let i = 0
@@ -52,8 +55,13 @@ let mdTables = str => {
 // Here we find the content that should be parsed.
 const container = document.querySelector('.container').innerHTML
 
-// ere we outout the parsed content.
+// Here we outout the parsed content.
 let result = document.querySelector('.result')
+
+// Decode HTML entities.
+const htmlDecode = str => {
+  return str.replace(/&lt;/g, '<').replace(/&gt;/g, '>')
+}
 
 // Happy parsing!
 mdTables(container)
