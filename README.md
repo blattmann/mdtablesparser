@@ -1,6 +1,6 @@
 # mdtablesparser
 
-Parse markdown tables (without header) with a tiny javascript file.
+Parse markdown tables with a tiny javascript file.
 
 ## Example
 
