@@ -1,0 +1,57 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Markdown Table Parser</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&amp;subset=latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-dark-grey.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <h1 class="title">Markdown Table Parser</h1>
+  <div class="columns">
+
+    <section class="column is-one-third section">
+      <h2 class="subtitle">How to use...</h2>
+      <p>
+        Use markdown to create a table without a table header.
+      </p>
+      <p>Use
+        <code>div</code>,
+        <code>p</code> or
+        <code>br</code> elemnts for a new row, use the pipe (
+        <code>|</code>) for seperating the columns. Do not use a starting and / or ending pipe.
+      </p>
+      <p>
+        Currently, this parser only works for the given markup examples.
+      </p>
+    </section>
+
+    <section class="column section">
+      <h2 class="subtitle">Unparsed (usage examples)</h2>
+      <textarea class="container">
+        with | sample | content | for
+        <p>
+          lorem| ipsum | dolor | sit
+        </p>
+        foo| bar | days | hello | world
+        <br> with | new | br | content
+        <div>
+          and | some | div | content
+        </div>
+      </textarea>
+    </section>
+
+    <section class="column section">
+      <h3 class="subtitle">Parsed</h3>
+      <div class="result"></div>
+    </section>
+  </div>
+
+  <script src="js/parser.js"></script>
+</body>
+
+</html>

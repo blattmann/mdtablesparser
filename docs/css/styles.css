@@ -1,0 +1,55 @@
+body {
+  background-color: #303030;
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+}
+
+code {
+  background-color: #eee;
+  border: 1px solid #fff;
+  padding: 1px 8px;
+  color: #303030;
+}
+
+p {
+  line-height: 1.6rem;
+}
+
+textarea {
+  background-color: #eee;
+  border: 1px solid #fff;
+  padding-top: 15px;
+}
+
+.container {
+  height: 200px;
+  width: 300px;
+  font-size: 1rem;
+}
+
+.section {
+  padding-bottom: 0;
+}
+
+.section:last-of-type {
+  padding-bottom: 60px;
+}
+
+.title {
+  padding: 10px;
+}
+.title,
+.subtitle {
+  color: #fff;
+}
+
+.result table {
+  background-color: #eee;
+  border: 1px solid #fff;
+}
+
+.result td {
+  border: 1px solid #000;
+  padding: 2px 8px;
+  color: #303030;
+}
